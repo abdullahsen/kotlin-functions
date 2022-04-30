@@ -113,10 +113,9 @@ This means that a return inside a lambda expression will return from the enclosi
 whereas a return inside an anonymous function will return from the anonymous function itself.*/
 
 
-val funMultiply = {a: Int, b: Int ->  a * b}
-val funSayHi = {name: String -> println("Hello $name") }
+val funMultiply = { a: Int, b: Int -> a * b }
+val funSayHi = { name: String -> println("Hello $name") }
 
-fun performMath (a : Int, b: Int, mathFun : (Int, Int) -> Int) : Unit
-{
-    println ( "Value of calculation: ${mathFun(a, b)}")
+fun performMath(a: Int, b: Int, mathFun: (Int, Int) -> Int): Unit {
+    println("Value of calculation: ${mathFun(a, b)}")
 }
